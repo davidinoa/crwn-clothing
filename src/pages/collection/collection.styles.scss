@@ -17,3 +17,21 @@
     }
   }
 }
+
+@media (max-width: 750px) {
+  .collection-page {
+    .title {
+      font-size: 30px;
+      margin: 0 auto;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+
+      & .collection-item {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

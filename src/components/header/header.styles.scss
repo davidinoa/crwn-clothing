@@ -24,3 +24,24 @@
     }
   }
 }
+
+@media (max-width: 750px) {
+  .header {
+    margin-bottom: 1rem;
+
+    .logo-container {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .options {
+      flex-grow: 1;
+
+      .option {
+        padding: 10px 5px;
+      }
+    }
+  }
+}

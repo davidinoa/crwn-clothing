@@ -17,9 +17,12 @@
     }
   }
   .name,
-  .quantity,
-  .price {
+  .quantity {
     width: 23%;
+  }
+
+  .price {
+    width: 15%;
   }
 
   .quantity {
@@ -37,5 +40,12 @@
   .remove-button {
     padding-left: 12px;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 750px) {
+  .checkout-item {
+    padding: 0;
+    font-size: 15px;
   }
 }
