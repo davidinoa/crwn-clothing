@@ -12,3 +12,18 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 750px) {
+  .sign-in {
+    width: 90vw;
+    margin-bottom: 50px;
+
+    .title {
+      margin-bottom: 5px;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
+  }
+}
