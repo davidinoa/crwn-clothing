@@ -14,25 +14,7 @@
     grid-gap: 10px;
 
     & .collection-item {
-      margin-bottom: 30px;
-    }
-  }
-}
-
-@media (max-width: 750px) {
-  .collection-page {
-    .title {
-      font-size: 30px;
-      margin: 0 auto;
-    }
-
-    .items {
-      display: flex;
-      flex-direction: column;
-
-      & .collection-item {
-        margin-bottom: 15px;
-      }
+      margin-bottom: 10px;
     }
   }
 }

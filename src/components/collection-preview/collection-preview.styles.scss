@@ -6,11 +6,18 @@
   .title {
     font-size: 25px;
     margin-bottom: 25px;
+    text-align: center;
   }
 
   .preview {
     display: flex;
     justify-content: flex-start;
     overflow-x: scroll;
+  }
+}
+
+@media (max-width: 750px) {
+  .collection-preview {
+    margin-bottom: 0;
   }
 }
