@@ -1,4 +1,4 @@
-import { UserActionTypes } from './user.types';
+import UserActionTypes from './user.types';
 
 export const setCurrentUser = user => ({
   type: UserActionTypes.SET_CURRENT_USER,
@@ -22,4 +22,8 @@ export const signInSuccess = user => ({
 export const signInFailure = error => ({
   type: UserActionTypes.SIGN_IN_FAILURE,
   payload: error,
+});
+
+export const checkUserSession = () => ({
+  type: UserActionTypes.CHECK_USER_SESSION,
 });
