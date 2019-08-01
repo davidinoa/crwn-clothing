@@ -35,7 +35,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
 );
 
 const mapDispatchToProps = dispatch => ({
-  signOutStart: dispatch => dispatch(signOutStart()),
+  signOutStart: () => dispatch(signOutStart()),
 });
 
 const mapStateToProps = createStructuredSelector({
@@ -43,4 +43,7 @@ const mapStateToProps = createStructuredSelector({
   hidden: selectCartHidden,
 });
 
-export default connect(mapStateToProps)(Header);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Header);
