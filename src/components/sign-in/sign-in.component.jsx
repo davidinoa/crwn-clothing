@@ -15,7 +15,7 @@ class SignIn extends React.Component {
     };
   }
 
-  handleSubmit = async event => {
+  handleSubmit = event => {
     event.preventDefault();
     const { email, password } = this.state;
     const { emailSignInStart } = this.props;
