@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import CartIconContainer from '../cart-icon/cart-icon.container';
-import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+import CartDropdownContainer from '../cart-dropdown/cart-dropdown.container';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { signOutStart } from '../../redux/user/user.actions';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
@@ -29,7 +29,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
       <CartIconContainer />
     </OptionsContainer>
 
-    {hidden ? null : <CartDropdown />}
+    {hidden ? null : <CartDropdownContainer />}
   </HeaderContainer>
 );
 

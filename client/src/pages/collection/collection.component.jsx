@@ -1,5 +1,5 @@
 import React from 'react';
-import CollectionItem from '../../components/collection-item/collection-item.component';
+import CollectionItemContainer from '../../components/collection-item/collection-item.component';
 import {
   CollectionPageContainer,
   CollectionTitle,
@@ -13,7 +13,7 @@ const CollectionPage = ({ collection }) => {
       <CollectionTitle>{title}</CollectionTitle>
       <CollectionItemsContainer>
         {items.map(item => (
-          <CollectionItem key={item.id} item={item} />
+          <CollectionItemContainer key={item.id} item={item} />
         ))}
       </CollectionItemsContainer>
     </CollectionPageContainer>
