@@ -1,7 +1,11 @@
 .collection-preview {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted darkgrey;
 
   .title {
     font-size: 25px;
@@ -12,7 +16,9 @@
   .preview {
     display: flex;
     justify-content: flex-start;
+    max-width: 100%;
     overflow-x: scroll;
+    scrollbar-gutter: stable;
   }
 }
 
